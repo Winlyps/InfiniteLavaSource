@@ -1,0 +1,5 @@
+name: InfiniteLavaSource
+version: '1.0.0'
+main: winlyps.infiniteLavaSource.InfiniteLavaSource
+api-version: '1.20'
+authors: [ Winlyps ]
