@@ -14,6 +14,9 @@ class InfiniteLavaSource : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("InfiniteLavaSource plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("lavaSourceConversion", "false")
+            logger.info("InfiniteLavaSource plugin has been disabled.")
+        }
     }
 }
